@@ -4,8 +4,8 @@ export class Database {
 
     public static getClusterDetails() {
         return {
-            machine_id: Database.MachineId,
-            datacenter_id: Database.DataCenterId
+            machine_id: parseInt(process.env.MACHINE_ID || Database.MachineId.toString(), 10),
+            datacenter_id: parseInt(process.env.DATACENTER_ID || Database.DataCenterId.toString(), 10)
         }
     }
     

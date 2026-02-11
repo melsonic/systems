@@ -5,7 +5,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "bun index.ts"
+    "dev": "bun src/index.ts",
+    "test:load": "bun test/load-test.ts",
+    "test:quick": "bash test/quick-test.sh"
   },
   "keywords": [],
   "author": "",
